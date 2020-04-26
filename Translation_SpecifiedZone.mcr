@@ -17,11 +17,11 @@ $!Loop |Num|
     SOURCEZONE = |ZONE|
 	DESTINATIONZONE = |NEWZONE|
   $!ALTERDATA [|NEWZONE|]
-	EQUATION = '{X} = {X} + |DeltaX|'
+	EQUATION = '{X} = {X} + |Loop|*|DeltaX|'
   $!ALTERDATA [|NEWZONE|]
-	EQUATION = '{Y} = {Y} + |DeltaY|'
+	EQUATION = '{Y} = {Y} + |Loop|*|DeltaY|'
   $!ALTERDATA [|NEWZONE|]
-	EQUATION = '{Z} = {Z} + |DeltaZ|'
+	EQUATION = '{Z} = {Z} + |Loop|*|DeltaZ|'
 $!EndLoop
 
 $!VIEW DATAFIT
